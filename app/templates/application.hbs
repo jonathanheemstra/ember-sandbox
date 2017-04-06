@@ -1,5 +1,109 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    subtitle="Search Result with img, title, subtitle, and play icon"
+    as |sr|
+  }}
+    {{#yield-for sr 'left-content'}}
+      <img src="https://unsplash.it/42/24?random"/>
+    {{/yield-for}}
 
-{{outlet}}
+    {{#yield-for sr 'right-content'}}
+        {{kit-icon name='play'}}
+    {{/yield-for}}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    subtitle="Search result with img, title, subtitle"
+    as |sr|
+  }}
+    {{#yield-for sr 'left-content'}}
+        <img src="https://unsplash.it/42/24?random"/>
+    {{/yield-for}}
+
+    {{#yield-for sr 'right-content'}}
+    {{/yield-for}}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    subtitle="Search result with title, and subtitle only"
+    as |sr|
+  }}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    subtitle="search result with title, subtitle, and icon"
+    as |sr|
+  }}
+    {{#yield-for sr 'left-content'}}
+    {{/yield-for}}
+
+    {{#yield-for sr 'right-content'}}
+        {{kit-icon name='play'}}
+    {{/yield-for}}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    as |sr|
+  }}
+    {{#yield-for sr 'left-content'}}
+      <img src="https://unsplash.it/42/24?random"/>
+    {{/yield-for}}
+
+    {{#yield-for sr 'right-content'}}
+        {{kit-icon name='play'}}
+    {{/yield-for}}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    as |sr|
+  }}
+    {{#yield-for sr 'left-content'}}
+        <img src="https://unsplash.it/42/24?random"/>
+    {{/yield-for}}
+
+    {{#yield-for sr 'right-content'}}
+    {{/yield-for}}
+  {{/kit-search-result}}
+{{/link-to}}
+
+<br>
+<br>
+
+{{#link-to 'index'}}
+  {{#kit-search-result
+    title="title"
+    as |sr|
+  }}
+  {{/kit-search-result}}
+{{/link-to}}

@@ -1,5 +1,6 @@
 {
   "name": "sandbox",
   "dependencies": {
+    "popper.js": "https://unpkg.com/popper.js"
   }
 }
