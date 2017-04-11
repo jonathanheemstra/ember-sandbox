@@ -12,14 +12,18 @@ export default function(server) {
   /**
    * Create generic List with one media item.
    */
-  const mediaItem = server.create('media-item');
-  const listOne = server.create('list');
-  const listOneRow = server.create('list-row', {
-    mediaItem: mediaItem,
-    list: listOne,
-  });
+  // const mediaItem = server.create('media-item');
+  // const listOne = server.create('list');
+  // const listOneRow = server.create('list-row', {
+  //   mediaItem: mediaItem,
+  //   list: listOne,
+  // });
+  const image = server.create('image');
 
   for (var i = 0; i < 10; i++) {
-    server.create('media-item');
+    server.create('media-item', {
+      images: image,
+    });
   }
+
 }

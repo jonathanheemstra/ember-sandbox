@@ -1,109 +1,84 @@
 {{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    subtitle="Search Result with img, title, subtitle, and play icon"
-    as |sr|
+{{#kit-list-item
+  meta="Meta Text"
+  title="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  subtitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  summary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}}
+  {{kit-image
+    backgroundColor="#a5dad3"
+    ratio="9:9"
+    url="https://unsplash.it/400/400"
   }}
-    {{#yield-for sr 'left-content'}}
-      <img src="https://unsplash.it/42/24?random"/>
-    {{/yield-for}}
-
-    {{#yield-for sr 'right-content'}}
-        {{kit-icon name='play'}}
-    {{/yield-for}}
-  {{/kit-search-result}}
+{{/kit-list-item}}
 {{/link-to}}
 
+<br>
 <br>
 <br>
 
 {{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    subtitle="Search result with img, title, subtitle"
-    as |sr|
+{{#kit-list-item
+  meta="Meta Text"
+  title="Title Text"
+  subtitle="Subtitle Text"
+  summary="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+}}
+  {{kit-image
+    backgroundColor="#a5dad3"
+    ratio="9:9"
+    url="https://unsplash.it/400/400"
   }}
-    {{#yield-for sr 'left-content'}}
-        <img src="https://unsplash.it/42/24?random"/>
-    {{/yield-for}}
-
-    {{#yield-for sr 'right-content'}}
-    {{/yield-for}}
-  {{/kit-search-result}}
+{{/kit-list-item}}
 {{/link-to}}
 
+<br>
 <br>
 <br>
 
 {{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    subtitle="Search result with title, and subtitle only"
-    as |sr|
-  }}
-  {{/kit-search-result}}
+{{#kit-list-item
+  meta="Meta Text"
+  title="Title Text"
+  subtitle="Subtitle Text"
+  summary="Summary Text"
+}}
+  <img src="https://unsplash.it/400/225" alt="">
+{{/kit-list-item}}
 {{/link-to}}
 
+<br>
 <br>
 <br>
 
 {{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    subtitle="search result with title, subtitle, and icon"
-    as |sr|
+{{#kit-list-item
+  meta="Meta Text"
+  title="Title Text"
+  subtitle="Subtitle Text"
+  summary="Summary Text"
+}}
+  {{kit-image
+    backgroundColor="#a5dad3"
+    ratio="9:9"
+    url="https://unsplash.it/400/400"
   }}
-    {{#yield-for sr 'left-content'}}
-    {{/yield-for}}
-
-    {{#yield-for sr 'right-content'}}
-        {{kit-icon name='play'}}
-    {{/yield-for}}
-  {{/kit-search-result}}
+{{/kit-list-item}}
 {{/link-to}}
 
 <br>
 <br>
+<br>
 
-{{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    as |sr|
+{{#kit-list-item
+  meta="Meta Text"
+  title="Title Text"
+  subtitle="Subtitle Text"
+  summary="Summary Text"
+}}
+  {{kit-image
+    backgroundColor="#a5dad3"
+    ratio="16:9"
+    url="https://unsplash.it/400/225"
   }}
-    {{#yield-for sr 'left-content'}}
-      <img src="https://unsplash.it/42/24?random"/>
-    {{/yield-for}}
-
-    {{#yield-for sr 'right-content'}}
-        {{kit-icon name='play'}}
-    {{/yield-for}}
-  {{/kit-search-result}}
-{{/link-to}}
-
-<br>
-<br>
-
-{{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    as |sr|
-  }}
-    {{#yield-for sr 'left-content'}}
-        <img src="https://unsplash.it/42/24?random"/>
-    {{/yield-for}}
-
-    {{#yield-for sr 'right-content'}}
-    {{/yield-for}}
-  {{/kit-search-result}}
-{{/link-to}}
-
-<br>
-<br>
-
-{{#link-to 'index'}}
-  {{#kit-search-result
-    title="title"
-    as |sr|
-  }}
-  {{/kit-search-result}}
-{{/link-to}}
+{{/kit-list-item}}

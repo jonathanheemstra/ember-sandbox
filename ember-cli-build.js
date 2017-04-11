@@ -31,6 +31,7 @@ module.exports = function(defaults) {
         'kit-app-lockup',
         'kit-icon',
         'kit-image',
+        'kit-list-item',
         'kit-menu-item',
         'kit-nav-item',
         'kit-navbar',
@@ -38,6 +39,7 @@ module.exports = function(defaults) {
         'kit-search-result',
         'kit-panel',
         'kit-overlay',
+        'kit-grid-item',
         'yield-for',
       ],
 
