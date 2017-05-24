@@ -114,7 +114,7 @@ export default Ember.Controller.extend({
   * @default false
   * @type {String}
   */
-  isNavbarTransparent: true,
+  isHeaderPresent: true,
 
   /**
   * Property for controlling the `kit-search--focused` flag class on

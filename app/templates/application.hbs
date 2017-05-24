@@ -1,78 +1,74 @@
-{{#kit-hero-header
-  imageUrl='http://wac.6261.mucdn.net/806261/artwork/images/cdn/81af02c5-6803-4c84-915b-876f6156405f/1536/560/image.jpg'
-  backgroundHex='#a5dad3'
-}}
-  {{#kit-hero-header-text title="Welcome to the First Baptist Church of Newport Beach" subtitle="We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences. We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences." as |header|}}
-    {{#yield-for header 'button'}}
-      {{#kit-button size="xl" color="primary"}}What we teach{{/kit-button}}
-    {{/yield-for}}
-  {{/kit-hero-header-text}}
-{{/kit-hero-header}}
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-
-
-{{#kit-hero-header
-  videoUrl='http://thenewcode.com/assets/videos/polina.mp4'
-  backgroundHex='#a5dad3'
-}}
-  {{#kit-hero-header-text title="Welcome to the First Baptist Church of Newport Beach" subtitle="We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences." as |header|}}
-    {{#yield-for header 'button'}}
-      {{#kit-button size="xl" color="primary"}}What we teach{{/kit-button}}
-    {{/yield-for}}
-  {{/kit-hero-header-text}}
-{{/kit-hero-header}}
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-
-{{#kit-hero-header
-  videoUrl='http://thenewcode.com/assets/videos/polina.mp4'
-  imageUrl='http://wac.6261.mucdn.net/806261/artwork/images/cdn/81af02c5-6803-4c84-915b-876f6156405f/1536/560/image.jpg'
-  backgroundHex='#a5dad3'
-}}
-  {{#kit-hero-header-text title="Welcome to the First Baptist Church of Newport Beach" subtitle="We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences." as |header|}}
-    {{#yield-for header 'button'}}
-      {{#kit-button size="xl" color="primary"}}What we teach{{/kit-button}}
-    {{/yield-for}}
-  {{/kit-hero-header-text}}
-{{/kit-hero-header}}
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-
-
-{{#kit-hero-header
-  backgroundHex='#a5dad3'
-}}
-  {{kit-hero-header-text title="Welcome to the First Baptist Church of Newport Beach" subtitle="We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences."}}
-{{/kit-hero-header}}
-
-<br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-<br>
-
-
-{{#kit-hero-header}}
-  {{kit-hero-header-text title="Welcome to the First Baptist Church of Newport Beach" subtitle="We hope you'll listen to our latest message or check us out on Facebook, Twitter, Instagram and more. Learn more about ELC by experiencing it for yourself at one of our weekend worship experiences."}}
-{{/kit-hero-header}}
+<table>
+  <tbody>
+    <th>Color</th>
+    <th>Shape</th>
+    <tr>
+      <td>
+        <h2>PRIMARY button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="primary" textColor="primary-comp"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>SECONDARY button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="secondary" textColor="secondary-comp"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>DANGER button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="danger" textColor="danger-comp"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>DEFAULT button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>CUSTOM TEXT COLOR button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="default" textColor="" class="kit-accent-color--text"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>COLOR = PRIMARY COLOR button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" color="primary"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>COLOR = DANGER COLOR button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" color="danger"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>COLOR = SECONDARY COLOR button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" color="secondary"}}Hello World{{/kit-button}}
+      </td>
+      <td>
+        <h2>DEFAULT SHAPE button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="primary" textColor="primary"}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>PILL SHAPE button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="primary" textColor="primary" buttonShape="pill" border=false}}Hello World{{/kit-button}}
+        <br>
+        <br>
+        <h2>FLAT SHAPE button</h2>
+        <br>
+        <br>
+        {{#kit-button size="xl" backgroundColor="primary" textColor="primary" buttonShape="square" border=false}}Hello World{{/kit-button}}
+      </td>
+    </tr>
+  </tbody>
+</table>

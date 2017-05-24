@@ -1,18 +1,48 @@
 @import 'ember-kit';
 
 html {
-  background-color: @grey--700;
+  background-color: @grey--500;
 }
 
 body {
   min-height: 1024px;
+  max-width: 1024px;
+  margin: 10px auto;
 }
 
-.kit-hero-header-text {
-  z-index: @layer__100;
+h2 {
+  font-size: 1.5em;
   color: @white;
 }
 
-.kit-accent-color--background-color {
-  background-color: red;
+table {
+  text-align: center;
+}
+
+th {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  padding: 25px;
+}
+
+.kit-accent-color--text,
+.kit-search--focused .kit-icon,
+.route-app__navbar--white .kit-icon {
+  color: green;
+}
+.kit-accent-color--background-color,
+.route-app__search-result .play-icon {
+  background-color: purple;
+
+  &:hover {
+  background-color: hsl(hue(purple), saturation(purple) - 10%, lightness(purple) - 6%);
+ }
+
+ &:active {
+  background-color: hsl(hue(purple), saturation(purple) - 24%, lightness(purple) - 12%);
+ }
 }
