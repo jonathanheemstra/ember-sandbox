@@ -25,16 +25,21 @@ module.exports = function(defaults) {
         'video',
         'web-app',
         'web-tab',
+        'web-tab-banner',
       ],
 
       components: [
         'kit-app-lockup',
         'kit-button',
+        'kit-circle-button',
         'kit-flat-input',
-        'kit-hero-header-text',
+        'kit-grid-item',
         'kit-hero-header',
+        'kit-hero-header-text',
         'kit-icon',
         'kit-image',
+        'kit-list-item',
+        'kit-loading-spinner',
         'kit-menu-item',
         'kit-nav-item',
         'kit-navbar',
@@ -48,11 +53,15 @@ module.exports = function(defaults) {
       helpers: [
         'filter-by',
         'find-by',
-        'image-url'
+        'hyphenate',
+        'image-url',
+        'separated-string',
       ],
 
       mixins: [
         'kit-body-click-mixin',
+        'kit-image-aliases',
+        'kit-route-not-found',
       ],
 
       models: [
@@ -70,10 +79,12 @@ module.exports = function(defaults) {
         'video',
         'web-app',
         'web-tab',
+        'web-tab-banner',
       ],
 
       serializers: [
         'kit-hal',
+        'list-row',
         'search-hit',
       ],
 
