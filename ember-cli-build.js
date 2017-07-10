@@ -31,6 +31,7 @@ module.exports = function(defaults) {
       components: [
         'kit-app-lockup',
         'kit-button',
+        'kit-button-with-text',
         'kit-circle-button',
         'kit-flat-input',
         'kit-grid-item',
